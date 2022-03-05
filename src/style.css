@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: start;
+}
+
+.menu{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content:flex-start;
+   align-items: flex-start;
+}
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-style: initial;
+    font:  "Times New Roman (serif)";
+}
+.product{
+    border: black;  
+}
+
+.cover{
+    size: 50px;
+}
