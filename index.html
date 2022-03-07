@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="logo/open-book.png" />
     <title>Book</title>
 </head>
 <body>
+    
     <header>
-        <div class= "container">
-            <div class="Logo"> Books </div>
-            <div class="sher">
-                <form>
-                    <input text = "text" placeholder="Искать здесь...">
-                    <button type= "submit"> Поиск </button>
-                </form>
-            </div>
-            <div class ="buttonMenu">
-
-                <button>sing in </button>
-                <button>sing up </button>
-            </div>
-        </div> 
+        <div class = "logoLabel">BOOOK SHOP</div>
+        <nav>
+            <ul>
+                <li><a>Адрес магазина</a></li>
+                <li><a>Контакты </a></li>
+                <li><a>Доставка и оплата</a></li>
+            </ul>
+        </nav>
+        <div class="Cart">
+            <img src="logo/корзина.png" alt="CartLogo" width="50px">
+            <p>0</p>
+        </div>
     </header>
+
+    <div class="container">
 
     <div class="menu">
         
@@ -54,15 +56,32 @@
     </div>
 
     <section>
-        <div class = "product">
-        <form>
-            <img src="https://img-gorod.ru/27/945/2794526_detail.jpg" class="cover">
-            <label > берсерк. Том 1</label>
+        <div class = "products">
+            <div class = "product">
+            <img src="https://img-gorod.ru/27/945/2794526_detail.jpg" class="cover" height="311"> 
+            <label > Берсерк. Том 1</label>
             <label >Кэнтаро Миура</label>
             <label>1109p</label>
             <button>В корзину</button>
-        </form>
+            </div>
+
+            <div class = "product">
+                <img src="https://img-gorod.ru/27/978/2797882_detail.jpg" class="cover" height="311"> 
+                <label > Берсерк. Том 2</label>
+                <label >Кэнтаро Миура</label>
+                <label>1109p</label>
+                <button>В корзину</button>
+            </div>
+
+            <div class = "product">
+                <img src="https://img-gorod.ru/27/978/2797882_detail.jpg" class="cover" height="311"> 
+                <label > Берсерк. Том 3</label>
+                <label >Кэнтаро Миура</label>
+                <label>1109p</label>
+                <button>В корзину</button>
+            </div>
     </div>
     </section>
+    </div>
 </body>
 </html>
