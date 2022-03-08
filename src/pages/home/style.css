@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap");
+@font-face {
+  font-family: 'Smooch Sans';
+  src: url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap");
+  size: '400px';
+}
+
+* {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  background-color: #333;
+}
+
+header {
+  font-family: 'Smooch Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10%;
+}
+
+header .logoLabel {
+  cursor: pointer;
+}
+
+header .nav_links {
+  list-style: none;
+}
+
+header .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header .nav_links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .nav_links li a:hover {
+  color: #0088a9;
+}
+
+header button {
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+/*# sourceMappingURL=style.css.map */
