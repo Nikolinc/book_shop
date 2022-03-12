@@ -1,0 +1,59 @@
+
+@import '../../style/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+
+*{margin: 0%;}
+
+.App{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    background-color:#333;
+}
+
+header{
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+
+    .logoLabel{
+        cursor: pointer;
+    }
+
+    .nav_links{
+        list-style: none;
+
+        li{
+            display: inline-block;
+            padding: 0px 20px ;
+            a{
+                transition: all 0.3s ease 0s;
+            }
+             
+            a:hover{
+               color: $blue-tone-one; 
+            }
+        }
+       
+    }
+    button{
+        padding: 9px 25px;
+        background-color: $blue-tone-one;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    button:hover{
+        background-color: $blue-tone-two;
+    }
+}

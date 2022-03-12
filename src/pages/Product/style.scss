@@ -1,0 +1,58 @@
+@import '../../style/colors.scss';
+
+.component{
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    font-family: 16px "PT Sans","sans-serif";
+    margin: 15px 20px 15px 1px;
+    padding: 15px;
+
+    .auter{
+        color: $new-grey-color;
+        max-height: 1.2em;
+        overflow: hidden;
+        line-height: 22px;
+        margin-top: 5px; 
+    }
+
+    .price{
+        font-weight: 700;
+        margin: 16px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-box-pack: start;
+        justify-content: flex-start;
+    }
+    
+    .buy{
+        display: inline-block;
+        width: 160px;
+        height: 40px;
+        background: $blue-tone-two;
+        border-radius: 5px;
+        color: $white;       
+        padding: 1px 3px 40px 5px;       
+        border: 0;
+        
+    }
+    .buy:hover{
+        background: $blue-tone-one;
+    }
+
+
+}
+
+.component:hover{
+    -webkit-box-shadow: 14px 14px 16px 12px rgba(34, 60, 80, 0.17);
+    -moz-box-shadow: 14px 14px 16px 12px rgba(34, 60, 80, 0.17);
+    box-shadow: 14px 14px 16px 12px rgba(34, 60, 80, 0.17);
+}
