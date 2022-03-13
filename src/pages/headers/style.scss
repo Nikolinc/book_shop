@@ -5,10 +5,13 @@
 *{margin: 0%;}
 
 .App{
-    margin: 0%;
     box-sizing: border-box;
     padding: 0;
     background-color:#333;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    opacity: 90%;
 }
 
 header{
@@ -24,6 +27,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
+    
 
     .logoLabel{
         cursor: pointer;
@@ -45,8 +49,13 @@ header{
         }
        
     }
+    .Sing{
+        display: inline-block;
+        column-gap: 10%; 
+    }
     button{
-        padding: 9px 25px;
+        margin-left: 10px;
+        padding: 9px 15px;
         background-color: $blue-tone-one;
         border: none;
         border-radius: 50px;

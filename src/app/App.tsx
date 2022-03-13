@@ -48,7 +48,22 @@ price:"536p",key:"6"})
 productArray.push({image:"https://img-gorod.ru/29/042/2904206_detail.jpg",
 name:"Маркетинг 5.0. Технологии ...", 
 auter:"Котлер Ф.",
-price:"964",key:"7"})
+price:"964р",key:"7"})
+
+productArray.push({image:"https://img-gorod.ru/22/216/2221617_detail.jpg",
+name:"Дом, в котором…", 
+auter:"Петросян М.",
+price:"776р",key:"8"})
+
+productArray.push({image:"https://img-gorod.ru/28/634/2863449_detail.jpg",
+name:"Пост", 
+auter:"Глуховский Д.",
+price:"904р",key:"9"})
+
+productArray.push({image:"https://img-gorod.ru/28/424/2842415_detail.jpg",
+name:"Доктор Гарин", 
+auter:"Сорокин В.",
+price:"804р",key:"10"})
 
 function App() {
 
