@@ -2,3 +2,9 @@
 @import 'colors.scss';
 
 
+.container{
+    display: grid;
+    grid-template-rows: (6,300px);
+    grid-template-columns: repeat(5,20%);
+    padding: 10px;
+}

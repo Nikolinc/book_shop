@@ -1,20 +1,24 @@
 
-@import './../../style/font.scss';
-@import './../../style/colors.scss';
+@import '../../style/colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
 
-* {
-    margin: 0%;
+*{margin: 0%;}
+
+.App{
     box-sizing: border-box;
     padding: 0;
     background-color:#333;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    opacity: 90%;
 }
 
 header{
     font-family: 'Smooch Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1 ;
+    color: $white;
     text-decoration: none;
 }
 
@@ -23,6 +27,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
+    
 
     .logoLabel{
         cursor: pointer;
@@ -39,20 +44,25 @@ header{
             }
              
             a:hover{
-               color: #0088a9; 
+               color: $blue-tone-one; 
             }
         }
        
     }
+    .Sing{
+        display: inline-block;
+        column-gap: 10%; 
+    }
     button{
-        padding: 9px 25px;
-        background-color: rgba(0,136,169,1);
+        margin-left: 10px;
+        padding: 9px 15px;
+        background-color: $blue-tone-one;
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
     button:hover{
-        background-color: rgba(0,136,169,0.8);
+        background-color: $blue-tone-two;
     }
 }
