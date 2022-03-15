@@ -65,6 +65,110 @@ name:"Доктор Гарин",
 auter:"Сорокин В.",
 price:"804р",key:"10"})
 
+
+productArray.push({image:"https://img3.labirint.ru/rc/a63fd99361bfb913cf732d979d8b10ff/220x340/books75/747735/cover.jpg?1589469910",
+name:"Берсерк том 1 ", 
+auter:"Хуй Знает Кто Младший",
+price:"1990р",key:"1"})
+
+productArray.push({image:"https://img-gorod.ru/28/966/2896636_detail.jpg",
+name:"Невеста Ноября", 
+auter:"Арден Л.",
+price:"518p",key:"2"})
+
+
+productArray.push({image:"https://img-gorod.ru/29/023/2902301_detail.jpg",
+name:"Живи и давай жить другим", 
+auter:"Грун Х.",
+price:"629p",key:"3"})
+
+productArray.push({image:"https://img-gorod.ru/28/922/2892294_detail.jpg",
+name:"Элизиум", 
+auter:"Сакавич Н.",
+price:"458p",key:"4"})
+
+productArray.push({image:"https://img-gorod.ru/29/025/2902568_detail.jpg",
+name:"Танец пылающего моря (#2)", 
+auter:"Меллоу Э.Дж.",
+price:"644p",key:"5"})
+
+productArray.push({image:"https://img-gorod.ru/29/025/2902568_detail.jpg",
+name:"Я - бездна", 
+auter:"Карризи Д.",
+price:"536p",key:"6"})
+
+productArray.push({image:"https://img-gorod.ru/29/042/2904206_detail.jpg",
+name:"Маркетинг 5.0. Технологии ...", 
+auter:"Котлер Ф.",
+price:"964р",key:"7"})
+
+productArray.push({image:"https://img-gorod.ru/22/216/2221617_detail.jpg",
+name:"Дом, в котором…", 
+auter:"Петросян М.",
+price:"776р",key:"8"})
+
+productArray.push({image:"https://img-gorod.ru/28/634/2863449_detail.jpg",
+name:"Пост", 
+auter:"Глуховский Д.",
+price:"904р",key:"9"})
+
+productArray.push({image:"https://img-gorod.ru/28/424/2842415_detail.jpg",
+name:"Доктор Гарин", 
+auter:"Сорокин В.",
+price:"804р",key:"10"})
+
+productArray.push({image:"https://img3.labirint.ru/rc/a63fd99361bfb913cf732d979d8b10ff/220x340/books75/747735/cover.jpg?1589469910",
+name:"Берсерк том 1 ", 
+auter:"Хуй Знает Кто Младший",
+price:"1990р",key:"1"})
+
+productArray.push({image:"https://img-gorod.ru/28/966/2896636_detail.jpg",
+name:"Невеста Ноября", 
+auter:"Арден Л.",
+price:"518p",key:"2"})
+
+
+productArray.push({image:"https://img-gorod.ru/29/023/2902301_detail.jpg",
+name:"Живи и давай жить другим", 
+auter:"Грун Х.",
+price:"629p",key:"3"})
+
+productArray.push({image:"https://img-gorod.ru/28/922/2892294_detail.jpg",
+name:"Элизиум", 
+auter:"Сакавич Н.",
+price:"458p",key:"4"})
+
+productArray.push({image:"https://img-gorod.ru/29/025/2902568_detail.jpg",
+name:"Танец пылающего моря (#2)", 
+auter:"Меллоу Э.Дж.",
+price:"644p",key:"5"})
+
+productArray.push({image:"https://img-gorod.ru/29/025/2902568_detail.jpg",
+name:"Я - бездна", 
+auter:"Карризи Д.",
+price:"536p",key:"6"})
+
+productArray.push({image:"https://img-gorod.ru/29/042/2904206_detail.jpg",
+name:"Маркетинг 5.0. Технологии ...", 
+auter:"Котлер Ф.",
+price:"964р",key:"7"})
+
+productArray.push({image:"https://img-gorod.ru/22/216/2221617_detail.jpg",
+name:"Дом, в котором…", 
+auter:"Петросян М.",
+price:"776р",key:"8"})
+
+productArray.push({image:"https://img-gorod.ru/28/634/2863449_detail.jpg",
+name:"Пост", 
+auter:"Глуховский Д.",
+price:"904р",key:"9"})
+
+productArray.push({image:"https://img-gorod.ru/28/424/2842415_detail.jpg",
+name:"Доктор Гарин", 
+auter:"Сорокин В.",
+price:"804р",key:"10"})
+
+
 function App() {
 
   return (

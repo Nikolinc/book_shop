@@ -10,7 +10,9 @@ export default function HomePage(props: { image:boolean | React.ReactChild | Rea
    
    <>
       <div className="component">
-        <div className="cover"> <img src={[props.image]} alt="cover" height={"300px"}/> </div>
+
+        <div className="cover"> <img src={[props.image]} alt="cover" height={"300px"} /> </div>
+
         <div className="name">{props.name}</div>
         <div className="auter">{props.auter}</div>
         <div className="price">{props.price}</div>
