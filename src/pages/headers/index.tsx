@@ -42,6 +42,7 @@ export default function HomePage() {
 
     </div>
     <div className="container_menu">
+
         <div className="dropdown">
           <button className='dropbtn'> Categories</button>
             <div className="dropdown-content">
@@ -73,10 +74,12 @@ export default function HomePage() {
 
 function Categories(){
   return(
+
    <>
      {categories.map(category =>(
          <button>{category}
          </button>    
      ))}
     </>)
+
 }
