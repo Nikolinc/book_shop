@@ -18,7 +18,7 @@ interface Piece{
 
 function App() {
 
-  const [data, setData] = useState<Piece[]>([]);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,31 +32,26 @@ function App() {
       setLoading(false);
   },[]);
 
+ 
   if (loading){
     return <div>loading</div>
   }
 
+  console.log(data);
   return (
     <><Header />
-    <Position product = {data}/></>
-        
-  )
-}
-
-
-const Position = ({product:price})=>{
-  console.log(product);
-  return(
     <div className='container'>
-      {product.map(pos =>(<Product 
+     //{data.map(pos => (<Product 
       image = {pos.image}
       name = {pos.name}
       auter = {pos.auter}
       price = {pos.price}
-
       />))}</div>
-      
+      </>  
   )
 }
+
+
+
 
 export default App;
