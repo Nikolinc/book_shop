@@ -1,57 +1,62 @@
-import {useEffect,useState} from 'react';
+import React, {useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../pages/headers/index';
 import Product from '../pages/Product/index';
 import '../style/global.scss';
 
 
-
-interface Piece{
-  image:string;
-  name:string;
-  auter:string;
-  price:string;
-  key:string
- 
-}
-
-
 function App() {
 
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState({ values: [] });
+  const [url, setUrl] = useState('http://127.0.0.1:3500/product');
+  const [isLoading, setIsLoading] = useState(true);
+
+  const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(
-        'http://localhost:3500/product',
-        );
-    setData(result.data)
-      };
-      fetchData();
-      setLoading(false);
-  },[]);
+      setIsError(false);
+      setIsLoading(true);
+
+      try {
+        const result = await axios(url);
+        console.log(result);
+        setData(result.data);
+      } catch (error) {
+        setIsError(true);
+      }
+
+      setIsLoading(false);
+    };
+
+    fetchData();
+    console.log(data);
+  }, [url]);
 
  
-  if (loading){
-    return <div>loading</div>
-  }
 
-  console.log(data);
   return (
+    
     <><Header />
-    <div className='container'>
-     //{data.map(pos => (<Product 
-      image = {pos.image}
-      name = {pos.name}
-      auter = {pos.auter}
-      price = {pos.price}
-      />))}</div>
+
+    {isError && <div>Something went wrong ...</div>}
+
+    {isLoading ? (
+      <div>Loading ...</div>
+    ) : (
+      <div className='container'>
+
+      {data.values.map(pos => (
+        <Product 
+          image = {pos.image}
+          name = {pos.name}
+          auter = {pos.auter}
+          price = {pos.price}
+      />))}
+
+      </div> )}
       </>  
   )
 }
-
-
-
 
 export default App;

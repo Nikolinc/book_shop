@@ -5,7 +5,7 @@ import './style.scss'
 
 
 
-export default function HomePage(props: { image:boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined;name: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; auter: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; price: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; }) {
+export default function HomePage(props: { image:string;name: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; auter: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; price: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; }) {
   return (
    
    <>
