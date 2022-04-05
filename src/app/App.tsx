@@ -1,8 +1,10 @@
 import React, {useState, useEffect } from 'react';
 import axios from 'axios';
-import Header from '../pages/headers/index';
-import Product from '../pages/Product/index';
+import Header from '../widgets/headers/index';
+import Product from '../pages/catalog/index';
 import '../style/global.scss';
+import { render } from "react-dom";
+import { BrowserRouter,Routes,  Route} from "react-router-dom"
 
 
 function App() {
