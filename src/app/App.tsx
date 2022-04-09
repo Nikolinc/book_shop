@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../widgets/headers/index';
+import Footer from '../widgets/footer/index';
 import Catalog from '../pages/catalog/index';
 import HomePage from '../pages/Home/index';
 import '../style/global.scss';
@@ -18,6 +19,7 @@ function App() {
            <Route path='/' element = {<HomePage/>}></Route>
           <Route path="/Catalog" element={ <Catalog/>}> </Route>
         </Routes> 
+        <Footer/>
       </>  
   )
 }

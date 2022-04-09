@@ -29,17 +29,22 @@ header{
     padding: 10px 10%;
     
     .logo{
-        margin: 0;
-        position: relative;
-        display:inline-flex;
+        display:flex;
+        flex-wrap: nowrap;
         img{
-           width: 50%;
+            margin: 0;
+           width: 55%;
         }
 
         .logoLabel{
             font: "Abhaya Libre";
-            margin-left: 0;
             cursor: pointer;
+
+            .line{
+                height: 2px;
+                width: 100%;
+                background: $white;
+            }
         }
     }
 
