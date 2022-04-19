@@ -11,3 +11,7 @@ html{
     grid-template-columns: repeat(auto-fill, 300px);
     padding: 10px;
 }
+
+html::-webkit-scrollbar{
+    width: 0;
+}
