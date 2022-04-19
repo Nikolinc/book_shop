@@ -1,6 +1,9 @@
 @import 'font.scss';
 @import 'colors.scss';
 
+html{
+    overflow:unset; 
+}
 
 .container{
     display: grid;
