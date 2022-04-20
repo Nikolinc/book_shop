@@ -10,8 +10,28 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 3%;
-    padding-bottom: 13%;
+    padding-bottom: 3%;
 
+}
+ a{
+    margin-top: 3%;
+    color: $white;
+    text-decoration: none;
+}
+
+.In_our_stores_header, .In_the_online_store_header, .Subscribe_to_news_header{
+    display: flex;
+    align-self: flex-end;
+    width: 40;
+    h3{
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    
+}
+.link_container{
+    display: grid;
+    grid-template-columns: 1fr;
 }
