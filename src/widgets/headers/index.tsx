@@ -4,25 +4,6 @@ import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
 import './style.scss'
 
-
-const categories:string[] = [];
-
-categories.push(
-"Художественная литература",
-"Книги для детей",
-"Образование",
-"Наука и техника",
-"Общество",
-"Деловая литература",
-"Красота. Здоровье. Спорт",
-"Увлечения",
-"Психология",
-"Эзотерика",
-"Философия и религия",
-"Искусство",
-"Подарочные издания",
-"Книги на иностранных языках");
-
 export default function Heder() {
   return (
     <>
@@ -58,14 +39,3 @@ export default function Heder() {
   );
 }
 
-function Categories(){
-  return(
-
-   <>
-     {categories.map(category =>(
-         <button>{category}
-         </button>    
-     ))}
-    </>)
-
-}
