@@ -1,16 +1,14 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
-import './style/global.scss';
+import './style/global.scss'
 import App from './app/App'
-import { BrowserRouter } from 'react-router-dom';
-
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
-, 
- document.getElementById('root'))
-
+  </React.StrictMode>,
+  document.getElementById('root')
+)
