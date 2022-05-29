@@ -12,8 +12,7 @@ export default function Heder() {
             <div className="logo">
               <div className="logo_image">
                 <img
-                  src="https://psv4.userapi.com/c237331/u217672568/docs/d40/081082198388/icons8-stopka-knig-100_1.png?extra=N5LGYG3Q4ogOXrtzoJS7NASAf1nATCGyJOFF9OruCcNZc8kP3YuBO0uMhNhiR-rJ9w9rklCKtnhXNKqV2h0NGZWOem8wqTsYdJXP4dOnJ7ljVWqDEU1u9U6ibu9iJhy0vXCcot8baU-L1_Dt7o1DJ6Hxbw"
-                  alt=""
+                  src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/assets/icons8-стопка-книг-100%201.png"
                 />
               </div>
 
