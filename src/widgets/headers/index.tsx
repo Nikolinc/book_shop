@@ -12,7 +12,7 @@ export default function Heder() {
             <div className="logo">
               <div className="logo_image">
                 <img
-                  src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/assets/icons8-стопка-книг-100%201.png"
+                  src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/assets/logo_header.png"
                 />
               </div>
 
