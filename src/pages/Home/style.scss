@@ -16,8 +16,13 @@
         height: 2px;
         width: 100%;
         background: $white;
-        margin-top:  3%;
-        margin-bottom: 3%;
+       
+        margin-bottom: 1%;
+        position: absolute;
+        width: 546.74px;
+        height: 0px;
+        left: 155px;
+        border: 3px solid $white;
         
     }
 
@@ -25,31 +30,101 @@
         font-family: "Smooch Sans", sans-serif;
         color: $white;
         margin-top:  3%;
-        margin-bottom:45%;
+        margin-bottom:5%;
+        //position: absolute;
+        width: 562px;
+        height: 367px;
+        left: 155.01px;
+       
+
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 76px;
+
+        color: #FFFFFF;
+
     
     }
 }
-.novelties{
-    max-height: 300px;
-    max-width: 500px;
-    display: flex;
-    overflow: auto;
-    white-space: nowrap;
-    margin-left: 10%;
-    
-}
 
-.novelties::-webkit-scrollbar{
-    width: 0;
-}
+.imabe_home{
+  .background_image{
+    img{
+      box-sizing: border-box;
+      position: absolute;
+      width: 828px;
+      height: 724px;
+      left: 816px;
+      top: 235px;
+      border: 1px solid #434343;
+    }
+  }
+  .Polygon_1{
+    position: absolute;
+    width: 50px;
+    height: 829px;
+    left: 1450px;
+    top: 230px;
+    background: $black;
+    transform: rotate(30deg);
+  }
+  .Polygon_2{    
+    position: absolute;
+    width: 53.06px;
+    height: 830.41px;
+    left: 1506px;
+    top: 60.69px;
 
+    background: $black;
+    transform: rotate(-50.78deg);
+  }
+  .Polygon_3{    
+    position: absolute;
+    width: 50.44px;
+    height: 605.52px;
+    left: 1000.74px;
+    top: 470.81px;
 
-.novelties .novelty{
-    display: inline-block;
-    min-width: 110px;
-    height: 300px;
-    line-height: 110px;
-    padding: 14px;
-    margin-right: 10%;
+    background:  $black;
+    transform: rotate(-50.49deg);
+  } 
+  .Polygon_4{
+    position: absolute;
+    width: 51px;
+    height: 782px;
+    left: 958px;
+    top: 157px;
 
+    background:  $black;
+    transform: rotate(30deg);
+  }
+  .Polygon_5{
+    position: absolute;
+    width: 331px;
+    height: 432px;
+    left: 809px;
+    top: 225px; 
+    background:  $black;
+    clip-path: polygon(0 0, 100% 0, 33% 100%, 0% 81%);
+  }
+  .Polygon_6{
+    width: 135px;
+    height: 132px;
+    left: 815px;
+    top: 827px; 
+    background:  $black;
+    position: absolute;
+    clip-path: polygon(0 55%, 0% 100%, 100% 100%);
+  }
+  .Polygon_7{
+    width: 135px;
+    height: 132px;
+    left: 1510px;
+    top: 827px; 
+    background:  $black;
+    position: absolute;
+    clip-path: polygon(100% 28%, 0% 100%, 100% 100%);
+  }
 }
