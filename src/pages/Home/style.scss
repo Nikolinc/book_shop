@@ -43,13 +43,14 @@
         font-size: 30px;
         line-height: 76px;
 
-        color: #FFFFFF;
+        color:$white;
 
     
     }
 }
 
-.imabe_home{
+.imabe_home {
+  background: $white;
   .background_image{
     img{
       box-sizing: border-box;
@@ -60,10 +61,12 @@
       top: 235px;
       border: 1px solid #434343;
     }
+    background: url(../../../assets/reading_person.jpg);
+   border: 1px solid #434343;
   }
   .Polygon_1{
     position: absolute;
-    width: 50px;
+    width: 50px;  
     height: 829px;
     left: 1450px;
     top: 230px;
@@ -102,7 +105,7 @@
   }
   .Polygon_5{
     position: absolute;
-    width: 331px;
+    width: 335px;
     height: 432px;
     left: 809px;
     top: 225px; 
@@ -128,3 +131,23 @@
     clip-path: polygon(100% 28%, 0% 100%, 100% 100%);
   }
 }
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: $white;
+  display: flex;
+  align-items: center;
+  margin-top:4%;
+  font-size: 50px;
+  color: $white;
+  font-weight: 500;
+ 
+}
+
+.keen-slider{  
+  max-width: 35%;  
+  max-height: 20%; 
+  margin-bottom: 2%;
+  margin-left: 15% ;
+}
+
