@@ -35,6 +35,23 @@ export default function HomePage() {
       <main className="main">
         <div className="news">
           <Slide />
+          <div className="best">
+            <div className="header_best">
+              <p>The best of the best</p>
+            </div>
+            <div className="best_image">
+              <img
+                src="https://github.com/Nikolinc/book_shop/blob/main/assets/bestsell.png?raw=true"
+                alt=""
+              />
+            </div>
+            <div className="best_basic_text">
+              <p>A selection of the best books</p>
+            </div>
+            <div className="best_footer">
+              <p>Based on online store sales</p>
+            </div>
+          </div>
         </div>
       </main>
     </>
