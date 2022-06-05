@@ -35,6 +35,7 @@ export default function HomePage() {
       <main className="main">
         <div className="news">
           <Slide />
+
           <div className="best">
             <div className="header_best">
               <p>The best of the best</p>
@@ -52,9 +53,45 @@ export default function HomePage() {
               <p>Based on online store sales</p>
             </div>
           </div>
+
+          <div className="features">
+            <FeaturesBlock
+              image={`https://github.com/Nikolinc/book_shop/blob/main/assets/chick.png?raw=true`}
+              header={"Let's grow together"}
+              body={'Gifts for children and parents'}
+            />
+
+            <FeaturesBlock
+              image={`https://github.com/Nikolinc/book_shop/blob/main/assets/animals.png?raw=true`}
+              header={'Book watch'}
+              body={'Share your impressions, get bonuses'}
+            />
+
+            <FeaturesBlock
+              image={`https://github.com/Nikolinc/book_shop/blob/main/assets/cat.png?raw=true`}
+              header={`Game "Book Field"`}
+              body={'10% discount for winning'}
+            />
+          </div>
         </div>
+
+        
       </main>
     </>
+  )
+}
+
+function FeaturesBlock(props) {
+  return (
+    <div className="features_block">
+      <img src={[props.image]} alt="" />
+      <div className="features_block_text">
+        <div className="features_block_text_header">
+          <p>{props.header}</p>
+        </div>
+        <div className="features_block_text_body">{props.body}</div>
+      </div>
+    </div>
   )
 }
 
