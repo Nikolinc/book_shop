@@ -1,0 +1,92 @@
+@import '../../style/colors.scss';
+
+
+.component{
+    display: inline-block;
+    width: 202px;
+    height: 393px;
+    font-family: 16px "PT Sans","sans-serif";
+    margin: 15px 20px 0 1px;
+    padding: 15px 15px 0 15px;
+    margin-top: 20%;
+    background: $lite-grey;
+
+  .auter{
+        color: $new-grey-color;
+        max-height: 1.2em;
+        overflow: hidden;
+        line-height: 22px;        
+    }
+    .name{
+      margin-top: 10px;
+      width: 242px;
+      height: 35px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .cover{
+      display: flex;
+      justify-content: center;
+      img{
+         width: 171px;
+         height: 250px;
+      }
+     
+    }
+
+    .price{
+        font-weight: 700;
+         
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-box-pack: start;
+        justify-content: flex-start;
+       
+    }
+    
+    .container_button{
+
+        display: flex;
+        
+        .Buy_in_one_click, .Add_to_cart{
+            display: inline-block;
+           
+            background: $blue-tone-two;
+            border-radius: 5px;
+            color: $white;            
+            border: 0;   
+            margin-left: 2%;
+            height: 30px;           
+        }
+        .Buy_in_one_click{
+            text-align: center;
+            width: 160px;
+            font-weight: 700;
+        }
+        .Add_to_cart{
+          background: $white;
+        }
+       
+        .Buy_in_one_click:hover, .Add_to_cart:hover{
+            background: $blue-tone-one;
+        } 
+    }
+
+ 
+
+
+}
+
+.component:hover{
+    -webkit-box-shadow: 14px 14px 16px 12px rgba(34, 60, 80, 0.17);
+    -moz-box-shadow: 14px 14px 16px 12px rgba(34, 60, 80, 0.17);
+    box-shadow: 14px 14px 16px 12px rgba(34, 60, 80, 0.17);
+}

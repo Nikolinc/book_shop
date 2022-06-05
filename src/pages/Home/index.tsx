@@ -1,8 +1,9 @@
 import './style.scss'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import Api from '../../services/api'
+
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
-import axios from 'axios'
 
 export default function HomePage() {
   return (
@@ -74,8 +75,6 @@ export default function HomePage() {
             />
           </div>
         </div>
-
-        
       </main>
     </>
   )
@@ -112,32 +111,4 @@ function Slide() {
       ))}
     </div>
   )
-}
-
-function Api(link: String) {
-  const [data, setData] = useState({ values: [] })
-  const [url, setUrl] = useState(link)
-  const [isLoading, setIsLoading] = useState(true)
-
-  const [isError, setIsError] = useState(false)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsError(false)
-      setIsLoading(true)
-
-      try {
-        const result = await axios(url)
-        setData(result.data)
-      } catch (error) {
-        setIsError(true)
-      }
-
-      setIsLoading(false)
-    }
-
-    fetchData()
-  }, [url])
-
-  return data
 }
