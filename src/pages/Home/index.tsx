@@ -1,9 +1,9 @@
 import './style.scss'
-import React from 'react'
-import Api from '../../services/api'
-
+import React, { useState, useEffect } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
+import axios from 'axios'
+import Api from '../../services/api'
 
 export default function HomePage() {
   return (
@@ -21,7 +21,7 @@ export default function HomePage() {
 
         <div className="imabe_home">
           <div className="background_image">
-            <img src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/assets/reading_person.jpg" />
+            <img src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/src/assets/reading_person.jpg" />
           </div>
           <div className="Polygon_1"></div>
           <div className="Polygon_2"></div>
@@ -43,7 +43,7 @@ export default function HomePage() {
             </div>
             <div className="best_image">
               <img
-                src="https://github.com/Nikolinc/book_shop/blob/main/assets/bestsell.png?raw=true"
+                src="https://github.com/Nikolinc/book_shop/blob/main/src/assets/bestsell.png?raw=true"
                 alt=""
               />
             </div>

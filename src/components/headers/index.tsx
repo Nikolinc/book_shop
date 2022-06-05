@@ -11,7 +11,7 @@ export default function Heder() {
           <Link to="/" className="link">
             <div className="logo">
               <div className="logo_image">
-                <img src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/assets/logo_header.png" />
+                <img src="https://raw.githubusercontent.com/Nikolinc/book_shop/main/src/assets/logo_header.png" />
               </div>
 
               <div className="logoLabel">

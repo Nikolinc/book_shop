@@ -2,51 +2,22 @@ import './style.scss'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Product from '../../components/product'
+import Api from '../../services/api'
 
 export default function Catalog() {
-  const [data, setData] = useState({ values: [] })
-  const [url, setUrl] = useState('http://127.0.0.1:3500/product')
-  const [isLoading, setIsLoading] = useState(true)
-
-  const [isError, setIsError] = useState(false)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsError(false)
-      setIsLoading(true)
-
-      try {
-        const result = await axios(url)
-        console.log(result)
-        setData(result.data)
-      } catch (error) {
-        setIsError(true)
-      }
-
-      setIsLoading(false)
-    }
-
-    fetchData()
-  }, [url])
-
+  const data = Api('http://127.0.0.1:3500/product')
   return (
     <>
-      {isError && <div>Something went wrong ...</div>}
-
-      {isLoading ? (
-        <div>Loading ...</div>
-      ) : (
-        <div className="container">
-          {data.values.map((pos) => (
-            <Product
-              image={pos.image}
-              name={pos.name}
-              auter={pos.author}
-              price={pos.price}
-            />
-          ))}
-        </div>
-      )}
+      <div className="container">
+        {data.values.map((pos) => (
+          <Product
+            image={pos.image}
+            name={pos.name}
+            auter={pos.author}
+            price={pos.price}
+          />
+        ))}
+      </div>
     </>
   )
 }
