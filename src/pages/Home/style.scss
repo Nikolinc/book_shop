@@ -253,6 +253,57 @@
 }
 
 
+  
+
+.swiper {
+  width: 75%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+ 
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.headersSelection{
+  position: absolute;
+  width: 623px;
+  height: 44px;
+  margin-left: 70px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+color: #1B75BB;
+}
+
 
 
 

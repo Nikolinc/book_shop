@@ -13,7 +13,8 @@
     "keen-slider": "^6.6.14",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.2"
+    "react-router-dom": "^6.2.2",
+    "swiper": "^8.2.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.40",

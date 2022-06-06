@@ -1,11 +1,28 @@
 import './style.scss'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import axios from 'axios'
 import Api from '../../services/api'
+import Product from '../../components/product'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+// import required modules
+import { Pagination, Navigation } from 'swiper'
 
 export default function HomePage() {
+  const selections = [
+    'New literature',
+    'The best of the best',
+    '10 books by contemporary Asian writers',
+    'Coming soon',
+  ]
+
   return (
     <>
       <div className="home">
@@ -75,9 +92,24 @@ export default function HomePage() {
             />
           </div>
         </div>
+
+        <div className="body_content">
+          <SelectionBooks selections={selections} />
+        </div>
       </main>
     </>
   )
+}
+
+function SelectionBooks(props) {
+  return props.selections.map((pos) => (
+    <div className={pos}>
+      <div className="headersSelection">
+        <p>{pos}</p>
+      </div>
+      <SlidersBooks />
+    </div>
+  ))
 }
 
 function FeaturesBlock(props) {
@@ -110,5 +142,38 @@ function Slide() {
         </div>
       ))}
     </div>
+  )
+}
+
+function SlidersBooks() {
+  const data = Api('http://127.0.0.1:3500/product')
+
+  return (
+    <>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        slidesPerGroup={3}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {data.values.map((pos) => (
+          <SwiperSlide>
+            <Product
+              image={pos.image}
+              name={pos.name}
+              auter={pos.author}
+              price={pos.price}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   )
 }
