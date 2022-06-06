@@ -3,13 +3,10 @@
 
 .component{
     display: inline-block;
-    width: 202px;
-    height: 393px;
     font-family: 16px "PT Sans","sans-serif";
-    margin: 15px 20px 0 1px;
-    padding: 15px 15px 0 15px;
-    margin-top: 20%;
     background: $lite-grey;
+    width: 210ыpx;
+    padding: 20px 0 ;
 
   .auter{
         color: $new-grey-color;
@@ -79,10 +76,6 @@
             background: $blue-tone-one;
         } 
     }
-
- 
-
-
 }
 
 .component:hover{

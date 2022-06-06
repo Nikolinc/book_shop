@@ -103,11 +103,13 @@ export default function HomePage() {
 
 function SelectionBooks(props) {
   return props.selections.map((pos) => (
-    <div className={pos}>
+    <div className={`SelectionBooks ` + pos}>
       <div className="headersSelection">
         <p>{pos}</p>
       </div>
-      <SlidersBooks />
+      <div className="SlidersBooks">
+        <SlidersBooks />
+      </div>
     </div>
   ))
 }
@@ -151,9 +153,9 @@ function SlidersBooks() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        slidesPerGroup={3}
+        slidesPerView={6}
+        spaceBetween={1}
+        slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{

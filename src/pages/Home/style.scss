@@ -150,7 +150,7 @@
 
 .keen-slider{  
   margin-top:4%;
-  max-width: 35%;  
+  max-width: 33%;  
   margin-bottom: 2%;
   
 }
@@ -250,15 +250,11 @@
   }
 }
 }
-}
-
-
-  
+}  
 
 .swiper {
-  width: 75%;
-  height: 100%;
-  
+  width: 85%;
+  height: 500px;  
 }
 
 .swiper-slide {
@@ -289,11 +285,16 @@
   
 }
 
+.SelectionBooks{
+  display: flex;
+  flex-direction: column;
 .headersSelection{
   position: absolute;
   width: 623px;
-  height: 44px;
+  height: 144px;
   margin-left: 70px;
+  //padding-top: 100px;
+  margin-bottom: 100px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -301,10 +302,12 @@
   font-size: 32px;
   line-height: 39px;
 
-color: #1B75BB;
+  color: #1B75BB;
 }
-
-
+.SlidersBooks{
+  margin-top: 100px;
+}
+}
 
 
 
