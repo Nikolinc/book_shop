@@ -9,6 +9,7 @@
     "format": "prettier --write \"./src/**/**.{ts,tsx,js,jsx,json}\""
   },
   "dependencies": {
+    "@userfront/react": "^0.3.1",
     "axios": "^0.26.1",
     "keen-slider": "^6.6.14",
     "react": "^17.0.2",
