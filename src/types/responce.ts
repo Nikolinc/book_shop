@@ -6,7 +6,7 @@ export interface UserNewsType {
   lastname: string
 }
 
-export interface UserNewsType {
+export interface BookNewsType {
   name: string
   author: string
   price: string

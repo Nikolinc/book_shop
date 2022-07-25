@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\nikti\OneDrive\Документы\WebProject\book_shop\node_modules\yarn\bin\yarn.js add -D eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 @typescript-eslint/parser@latest
+
+PATH: 
+  C:\Users\nikti\OneDrive\Документы\WebProject\book_shop\node_modules\.bin;C:\Users\nikti\OneDrive\Документы\WebProject\node_modules\.bin;C:\Users\nikti\OneDrive\Документы\node_modules\.bin;C:\Users\nikti\OneDrive\node_modules\.bin;C:\Users\nikti\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\nikti\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.2.5.0_x64__8wekyb3d8bbwe;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Tesseract-OCR;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\nikti\.cargo\bin;C:\Users\nikti\AppData\Local\Microsoft\WindowsApps;;C:\Users\nikti\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nikti\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\bin;;C:\Users\nikti\AppData\Local\npm-cache\_npx\7ef27be80482e586\node_modules\.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\nikti\OneDrive\Документы\WebProject\book_shop\node_modules\esbuild-windows-64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "book",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview",
+      "format": "prettier --write \"./src/**/**.{ts,tsx,js,jsx,json}\""
+    },
+    "dependencies": {
+      "axios": "^0.26.1",
+      "keen-slider": "^6.6.14",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "^6.2.2",
+      "swiper": "^8.2.2",
+      "yarn": "^1.22.19"
+    },
+    "devDependencies": {
+      "@types/axios": "^0.14.0",
+      "@types/react": "^17.0.40",
+      "@types/react-dom": "^17.0.10",
+      "@vitejs/plugin-react": "^1.0.7",
+      "prettier": "^2.6.1",
+      "sass": "^1.49.9",
+      "tailwindcss": "^3.1.6",
+      "typescript": "^4.5.4",
+      "vite": "^2.8.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
