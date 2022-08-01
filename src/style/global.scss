@@ -1,17 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import 'font.scss';
 @import 'colors.scss';
 
-html{
-    overflow:unset; 
+html {
+  overflow: unset;
+  background: $black;
 }
 
-.container{
-    display: grid;
-    grid-template-rows: (6,300px);
-    grid-template-columns: repeat(auto-fill, 300px);
-    padding: 10px;
+.container {
+  display: grid;
+  grid-template-rows: (6, 300px);
+  grid-template-columns: repeat(auto-fill, 300px);
+  padding: 10px;
 }
 
-html::-webkit-scrollbar{
-    width: 0;
+html::-webkit-scrollbar {
+  width: 0;
 }

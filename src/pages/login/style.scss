@@ -1,0 +1,84 @@
+.login{
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  height: 100%;
+  
+  .lamp{
+    img{
+      height:  700px;  
+      margin-left:90px;    
+      
+    }    
+  }
+
+  .authorisation{
+    margin-right: 10%;
+
+    .namePage{
+      margin-left:90px;
+      color: #fff;
+      width: 245px;
+      height: 98px;
+      font-family: 'Istok Web';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 92px;       
+    }
+    
+      input{
+      margin-top: 20px;
+      width: 381px;
+      height: 34px; 
+
+      background: #FFFFFF;
+      border-radius: 10px;
+    }
+    .reestablish{
+      color:#fff;
+      height: 24px;
+
+      font-family: 'Istok Web';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      display: flex;
+      align-items: flex-end;
+      a{
+        color: #FFA37B;
+      }
+      a:hover{
+        color: #FFA37B;
+        text-shadow: 0px 4px 4px #FABF7A;
+      }
+    }
+    .loginButton{
+      margin-top:10%;
+      margin-left: 30%;
+     button{      
+      width: 190px;
+      height: 44px;
+      background: #E35C22;
+      border-radius: 15px;
+      .textButton{
+        margin-left: 28%;
+        position: unset;
+        width: 169px;
+        height: 43px;
+        font-family: 'Istok Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+
+      }
+     }
+    }
+}
+}
